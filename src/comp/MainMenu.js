@@ -5,6 +5,7 @@ import Calculator from './Calculator'
 import Basics from './Basics'
 import Tablepages from './Tablepages'
 import { Button } from 'semantic-ui-react'
+import Simple from './Simple'
 
 export default function MainMenu() {
 
@@ -19,6 +20,7 @@ export default function MainMenu() {
             <Route path="calc" element={<Calculator />} />
             <Route path="basics" element={<Basics />} />
             <Route path="tables" element={<Tablepages />} />
+            <Route path="simple" element={<Simple />} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
@@ -46,6 +48,10 @@ function Myitems(params) {
       
       <Link to="/tables">
         <Button color='pink'>Tables</Button>
+      </Link>
+      
+      <Link to="/simple">
+        <Button color='pink'>Simple</Button>
       </Link>
 
       <Outlet />

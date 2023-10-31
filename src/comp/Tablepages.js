@@ -83,8 +83,10 @@ export default function Tablepages() {
           <Table.Cell>Social</Table.Cell>
           <Table.Cell>PET</Table.Cell>
         </Table.Row>
-          <Button >Send Students </Button>
         <Table.Row>
+          <Table.Cell colspan='9' style={{ textAlign: 'center' }}>
+            <Button size='large' color='blue' >Send Students </Button>
+          </Table.Cell>
 
 
         </Table.Row>
